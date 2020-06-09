@@ -6,9 +6,14 @@ for i in list(range(t)):
     ssum=0
     psum=0
     for j in u:
+        count=0
         ssum=ssum+int(j)
         if int(j)>0:
+            count=1
             psum=psum+int(j)
-        
-    print(ssum)
-    print(psum)
+        if count==1:
+            print(ssum)
+            print(psum)
+        else:
+            print(-1)
+            print(-1)
